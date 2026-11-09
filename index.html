@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salah — Étudiant en informatique</title>
+<style>
+:root{--bg:#fafaf7;--card:#ffffff;--text:#1d1f23;--muted:#5f6670;--accent:#0f766e;--line:#e3e3dc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101214;--card:#181b1e;--text:#e8e9ea;--muted:#9aa1a9;--accent:#5eead4;--line:#272b30}color-scheme:dark}
+:root[data-theme="dark"]{--bg:#101214;--card:#181b1e;--text:#e8e9ea;--muted:#9aa1a9;--accent:#5eead4;--line:#272b30}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:0 20px 48px}
+header{padding:56px 0 32px}
+.tag{font:13px ui-monospace,Menlo,Consolas,monospace;color:var(--accent);letter-spacing:.04em}
+h1{font-size:clamp(2rem,7vw,3rem);line-height:1.1;margin:8px 0 12px}
+.lead{color:var(--muted);font-size:1.1rem;margin:0 0 20px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btns a{padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid var(--accent);color:var(--accent)}
+.btns a.p{background:var(--accent);color:var(--bg)}
+section{padding:28px 0;border-top:1px solid var(--line)}
+h2{font-size:1.25rem;margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem}
+.grid{display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.card h3{margin:0 0 4px;font-size:1.05rem}
+.card p{margin:0 0 10px;color:var(--muted)}
+.card .chips span{font-size:.8rem;padding:2px 10px}
+footer{color:var(--muted);font-size:.9rem;padding-top:24px;border-top:1px solid var(--line)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="tag">// L2 Informatique · Université de Rouen Normandie</div>
+  <h1>Salut, je suis Salah.</h1>
+  <p class="lead">Étudiant en informatique, je construis de solides bases en programmation bas niveau, en algorithmique et en développement web, avec pour objectif de me spécialiser en IA ou en cybersécurité.</p>
+  <div class="btns"><a class="p" href="#projects">Voir mes projets</a><a href="#contact">Me contacter</a></div>
+</header>
+
+<section id="about">
+  <h2>À propos</h2>
+  <p>Je suis en deuxième année de licence d’informatique. J’aime comprendre comment les choses fonctionnent de bas en haut : des pointeurs et de la mémoire en C jusqu’à la pile et aux interruptions en assembleur x86, puis aux applications web complètes. J’apprends actuellement la programmation fonctionnelle avec OCaml, en route vers l’IA ou la cybersécurité.</p>
+</section>
+
+<section id="skills">
+  <h2>Compétences</h2>
+  <div class="chips">
+    <span>C</span><span>Assembleur x86 (TASM)</span><span>Algorithmique &amp; structures de données</span><span>PHP / MySQL</span><span>HTML / CSS</span><span>OCaml (en apprentissage)</span><span>Linux (Fedora)</span><span>VS Code</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projets</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>CritiQue / CinéAvis — site d’avis de films</h3>
+      <p>Projet web universitaire : comptes utilisateurs et sessions, stockage des avis dans MySQL, prise en compte des risques d’injection SQL, présenté lors d’une soutenance.</p>
+      <div class="chips"><span>PHP</span><span>MySQL</span><span>CSS</span></div>
+    </article>
+    <article class="card">
+      <h3>Chiffrement affine en assembleur DOS</h3>
+      <p>Programme de chiffrement Y = (a×X + b) mod 26 avec saisie bufferisée DOS, gestion de la pile et sortie regroupée.</p>
+      <div class="chips"><span>x86</span><span>TASM</span><span>DOSBox</span></div>
+    </article>
+    <article class="card">
+      <h3>Outils de fichiers binaires en C</h3>
+      <p>TP sur les entrées/sorties binaires, conversion de données météo CSV vers un format binaire, et fonctions de chaînes écrites uniquement avec des pointeurs, sans indexation de tableau.</p>
+      <div class="chips"><span>C</span><span>fread / fwrite</span><span>Pointeurs</span></div>
+    </article>
+    <article class="card">
+      <h3>Petits programmes en assembleur</h3>
+      <p>Un validateur de code de digicode, un miroir de chaîne utilisant la pile, et un vérificateur de parité.</p>
+      <div class="chips"><span>x86</span><span>Pile</span><span>INT 21h</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Ouvert aux stages et aux collaborations.</p>
+  <p>E-mail : <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+  GitHub : <a href="https://github.com/your-username">github.com/your-username</a><br>
+  LinkedIn : <a href="https://www.linkedin.com/in/your-name">linkedin.com/in/your-name</a></p>
+</section>
+<footer>© 2026 Salah</footer>
+</main>
+</body>
+</html>
